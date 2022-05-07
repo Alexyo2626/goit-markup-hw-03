@@ -57,12 +57,22 @@ h1,h2,h3,h4,h5,h6,p {
 
 .list {
     list-style: none;
+    margin: 0;
 }
 
 
 /* Styles for header */
 
+.header-container,
+.navigation,
+.header .list {
+    display: flex;
+}
+
 .logo {
+    padding: 24px 0;
+    margin-right: 93px;
+
     color: var(--accent-color);
 
     font-family: 'Raleway',
@@ -81,12 +91,36 @@ h1,h2,h3,h4,h5,h6,p {
     color: #FFFFFF;
 }
 
+.nav-list {
+    padding-left: 0;
+    align-items: center;
+}
+
+.nav-list .item {
+    padding: 32px 0;
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .header .item {
+    margin: 0;
+    
     color: currentColor;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header .contacts {
+    margin-left: auto;
+    align-items: center;
+}
+
+.header .contacts li:first-child {
+    margin-right: 50px;
 }
 
 .item.current {
@@ -99,6 +133,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .contacts .item {
+    padding: 32px 0;
+
     color: var(--second-text-color);
 }
 
