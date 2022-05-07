@@ -1,0 +1,247 @@
+/* CSS variables */
+:root {
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+
+    --bg-color: #FFFFFF;
+    --hero-bg-color: #2F303A;
+    --footer-bg-color: #2F303A;
+    
+    --hero-btn-color: #FFFFFF;
+    --text-btn-color-hover: #FFFFFF;
+    --accent-color: #2196F3;
+}
+
+
+/* Hidden  */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* Global styles */
+body {
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+
+/* Styles for header */
+
+.logo {
+    color: var(--accent-color);
+
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+
+}
+
+.logo-black {
+    color: #000000;
+}
+
+.logo-white {
+    color: #FFFFFF;
+}
+
+.header .item {
+    color: currentColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.item.current {
+    color: var(--accent-color);
+}
+
+.header .link:hover,
+.header .link:focus {
+    color: var(--accent-color);
+}
+
+.contacts .item {
+    color: var(--second-text-color);
+}
+
+
+/* Styles for hero */
+
+.hero {
+    background-color: var(--hero-bg-color)
+}
+
+.hero .title {
+    color: #ffffff;
+
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero .btn {
+    color: var(--hero-btn-color);
+    background-color: var(--accent-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    cursor: pointer;
+}    
+
+
+/* Styles for peculiarities */
+
+.peculiarities .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.peculiarities .text {
+    color: var(--second-text-color);
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+/* Styles for what doing */
+
+.what-doing .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/* Styles for our team */
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team .text {
+    color: var(--second-text-color);
+
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.9;
+}
+
+
+/* Styles for footer */
+
+.bottom {
+    background-color: var(--footer-bg-color)
+}
+
+.bottom .text {
+    color: #FFFFFF;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address {
+    font-style: normal;
+}
+
+.address .link {
+    color: var(--footer-text-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--accent-color);
+}
+
+/* =======================
+        Portfolio.html
+======================= */
+.portfolio .btn {
+    color: currentColor;
+    font-family: inherit;
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.portfolio .btn:hover,
+.portfolio .btn:focus,
+.btn.current {
+    color: var(--text-btn-color-hover);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.portfolio .subtitle {
+    color: var(--main-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+    color: var(--second-text-color);
+
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
