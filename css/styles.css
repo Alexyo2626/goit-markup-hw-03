@@ -39,7 +39,6 @@ body {
 }
 
 .container {
-    outline: 1px solid red;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -224,7 +223,20 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Styles for what doing */
 
+.what-doing {
+    padding-top: 0;
+}
+
+.what-doing-group {
+    display: flex;
+}
+
+.what-doing-group li:not(:last-child) {
+    margin-right: 30px;
+}
 .what-doing .title {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -239,7 +251,28 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #F5F4FA;
 }
 
+.team-group {
+    display: flex;
+}
+
+.team-group img {
+    display: block;
+    width: 100%;
+}
+
+
+.team-group li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-group li {
+    background-color: #ffffff;
+}
+
+
 .team .title {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -248,6 +281,9 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .team .subtitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
@@ -267,10 +303,15 @@ h1,h2,h3,h4,h5,h6,p {
 /* Styles for footer */
 
 .bottom {
-    background-color: var(--footer-bg-color)
+    background-color: var(--footer-bg-color);
+
+    padding: 60px 0;
 }
 
+
 .bottom .text {
+    margin-bottom: 9px;
+
     color: #FFFFFF;
 
     font-size: 14px;
@@ -279,6 +320,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .address {
+    margin-top: 20px;
+
     font-style: normal;
 }
 
@@ -292,6 +335,10 @@ h1,h2,h3,h4,h5,h6,p {
 .address .link:hover,
 .address .link:focus {
     color: var(--accent-color);
+}
+
+.address li:first-child {
+    margin-bottom: 9px;
 }
 
 /* =======================
