@@ -38,6 +38,19 @@ body {
     sans-serif;
 }
 
+.container {
+    outline: 1px solid red;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .link {
     text-decoration: none;
 }
