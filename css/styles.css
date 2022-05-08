@@ -97,11 +97,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
     color: #FFFFFF;
 }
 
-.header .item {
-    display: block;
-    padding: 32px 0;
-}
-
 .nav-list {
     padding-left: 0;
     align-items: center;
@@ -116,6 +111,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .header .item {
+    display: block;
+    padding: 32px 0;
     margin: 0;
     
     color: currentColor;
@@ -144,8 +141,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .contacts .item {
-    padding: 32px 0;
-
     color: var(--second-text-color);
 }
 
