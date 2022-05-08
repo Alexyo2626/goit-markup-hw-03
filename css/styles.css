@@ -50,9 +50,9 @@ body {
     padding-bottom: 94px;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-    margin-top: 0;
-    margin-bottom: 0;
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -107,6 +107,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 .nav-list li:not(:last-child) {
     margin-right: 50px;
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header .item {
@@ -232,6 +236,12 @@ h1,h2,h3,h4,h5,h6,p {
     display: flex;
 }
 
+.what-doing-group img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .what-doing-group .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -258,7 +268,8 @@ h1,h2,h3,h4,h5,h6,p {
 
 .team-group img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -396,16 +407,18 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .portfolio-group img {
-    width: 100%;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .portfolio-group .item {
     width: 370px;
-    border: 1px solid #EEEEEE;
 }
 
 .subtext {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio .subtitle {
