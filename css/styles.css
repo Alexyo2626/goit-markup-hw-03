@@ -76,8 +76,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .logo {
     display: block;
-    padding: 24px 0;
-    margin-right: 93px;
 
     color: var(--accent-color);
 
@@ -87,6 +85,11 @@ h1,h2,h3,h4,h5,h6,p,ul {
     font-size: 26px;
     letter-spacing: 0.03em;
 
+}
+
+.header .logo {
+    padding: 24px 0;
+    margin-right: 93px;
 }
 
 .logo-black {
@@ -322,10 +325,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .bottom .logo {
-    display: block;
-    width: 145px;
+    display: inline-block;
     margin-bottom: 20px;
-    padding: 0;
 }
 
 .bottom .text {
@@ -339,8 +340,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .address {
-    margin-top: 20px;
-
     font-style: normal;
 }
 
